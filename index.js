@@ -35,9 +35,9 @@ async function init() {
         await getData.addDepartment();
       } else if (optionAnswer.option === "Add role") {
         await getData.addRole();
-      } else if (optionAnswer.option === "Add an employee") {
+      } else if (optionAnswer.option === "Add employee") {
         await getData.addEmployee();
-      } else if (optionAnswer.option === "Update an employee role") {
+      } else if (optionAnswer.option === "Update employee role") {
         await getData.updateRole();
       } 
     } while (optionAnswer.option !== "Exit");
