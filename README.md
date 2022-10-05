@@ -1,1 +1,4 @@
-# who-works-here
+## Employee Tracker
+
+# Application for managing employee database.
+
