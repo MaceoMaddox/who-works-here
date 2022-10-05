@@ -13,15 +13,15 @@ async function createConnection() {
 
 async function getDepartments() {
     const connection = await createConnection();
-  
+    
     const [result] = await connection.query(
       `SELECT id as Id, name as Name FROM department ORDER BY id ASC`
     );
     console.table(result);
     connection.end();
-  }
+}
   
-  async function getRoles() {
+async function getRoles() {
     const connection = await createConnection();
   
     const [result] = await connection.query(
@@ -32,7 +32,6 @@ async function getDepartments() {
       FROM role INNER JOIN department on department.id=role.department_id 
       ORDER BY role.id ASC`
     );
-  
     console.table(result);
     connection.end();
 }
@@ -54,7 +53,6 @@ async function getEmployees() {
       LEFT OUTER JOIN employee as manager on e.manager_id=manager.id 
       ORDER BY e.id ASC`
     );
-  
     console.table(result);
     connection.end();
 }
