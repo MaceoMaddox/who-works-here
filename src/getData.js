@@ -212,7 +212,7 @@ async function updateRole() {
             message: "What is the employee's new role?",
             name: "roleName",
             loop: true,
-            choices: RoleChocies
+            choices: RoleChoices
         }
     ]);
   
